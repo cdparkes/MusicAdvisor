@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class MusicAdvisorTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class MusicAdvisorTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; MusicAdvisorTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">5.876s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">start</td>
+<td class="success">5.876s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[1;31m
+Start test 1?[0m
+&gt; auth
+use this link to request the access code:
+http://127.0.0.1:56788/authorize?client_id=e508e7306ef84fcd9a8769cac582b977&amp;redirect_uri=http://localhost:8080&amp;response_type=code
+waiting for code...
+?[0;34mTester&gt; Making requests to 'redirect_uri': http://localhost:8080
+?[0m?[0;34mTester&gt; Made request 1: Authorization code not found. Try again.
+?[0m?[0;34mTester&gt; Made request 2: Authorization code not found. Try again.
+code received
+making http request for access_token...
+?[0m?[0;34mTester&gt; Made request 3: Got the code. Return back to your program.
+response:
+---SUCCESS---
+&gt; exit
+---GOODBYE!---
+?[1;31m
+Start test 2?[0m
+&gt; auth
+use this link to request the access code:
+http://127.0.0.1:56788/authorize?client_id=e508e7306ef84fcd9a8769cac582b977&amp;redirect_uri=http://localhost:8080&amp;response_type=code
+waiting for code...
+?[0;34mTester&gt; Making requests to 'redirect_uri': http://localhost:8080
+?[0m?[0;34mTester&gt; Made request 1: Authorization code not found. Try again.
+?[0m?[0;34mTester&gt; Made request 2: Authorization code not found. Try again.
+code received
+making http request for access_token...
+?[0m?[0;34mTester&gt; Made request 3: Got the code. Return back to your program.
+response:
+---SUCCESS---
+&gt; categories
+http://127.0.0.1:56789/v1/browse/categories
+Top Lists
+Super Mood
+Party Time
+&gt; exit
+---GOODBYE!---
+?[1;31m
+Start test 3?[0m
+&gt; categories
+Please, provide access for application.
+&gt; exit
+---GOODBYE---
+?[1;31m
+Start test 4?[0m
+&gt; auth
+use this link to request the access code:
+http://127.0.0.1:56788/authorize?client_id=e508e7306ef84fcd9a8769cac582b977&amp;redirect_uri=http://localhost:8080&amp;response_type=code
+waiting for code...
+?[0;34mTester&gt; Making requests to 'redirect_uri': http://localhost:8080
+?[0m?[0;34mTester&gt; Made request 1: Authorization code not found. Try again.
+?[0m?[0;34mTester&gt; Made request 2: Authorization code not found. Try again.
+code received
+making http request for access_token...
+?[0m?[0;34mTester&gt; Made request 3: Got the code. Return back to your program.
+response:
+---SUCCESS---
+&gt; featured
+Monday Morning Mood
+http://open.spotify.com/user/spotify/playlist/6ftJBzU2LLQcaKefMi7ee7
+
+Upp och hoppa!
+http://open.spotify.com/user/spotify__sverige/playlist/4uOEx4OUrkoGNZoIlWMUbO
+
+&gt; exit
+---GOODBYE!---
+?[1;31m
+Start test 5?[0m
+&gt; featured
+Please, provide access for application.
+&gt; exit
+---GOODBYE---
+?[1;31m
+Start test 6?[0m
+&gt; auth
+use this link to request the access code:
+http://127.0.0.1:56788/authorize?client_id=e508e7306ef84fcd9a8769cac582b977&amp;redirect_uri=http://localhost:8080&amp;response_type=code
+waiting for code...
+?[0;34mTester&gt; Making requests to 'redirect_uri': http://localhost:8080
+?[0m?[0;34mTester&gt; Made request 1: Authorization code not found. Try again.
+?[0m?[0;34mTester&gt; Made request 2: Authorization code not found. Try again.
+code received
+making http request for access_token...
+?[0m?[0;34mTester&gt; Made request 3: Got the code. Return back to your program.
+response:
+---SUCCESS---
+&gt; new
+Runnin'
+[Pharrell Williams]
+https://open.spotify.com/album/5ZX4m5aVSmWQ5iHAPQpT71
+
+Sneakin'
+[Drake2, Drake3]
+https://open.spotify.com/album/0geTzdk2InlqIoB16fW9Nd
+
+&gt; exit
+---GOODBYE!---
+?[1;31m
+Start test 7?[0m
+&gt; new
+Please, provide access for application.
+&gt; exit
+---GOODBYE---
+?[1;31m
+Start test 8?[0m
+&gt; auth
+use this link to request the access code:
+http://127.0.0.1:56788/authorize?client_id=e508e7306ef84fcd9a8769cac582b977&amp;redirect_uri=http://localhost:8080&amp;response_type=code
+waiting for code...
+?[0;34mTester&gt; Making requests to 'redirect_uri': http://localhost:8080
+?[0m?[0;34mTester&gt; Made request 1: Authorization code not found. Try again.
+?[0m?[0;34mTester&gt; Made request 2: Authorization code not found. Try again.
+code received
+making http request for access_token...
+?[0m?[0;34mTester&gt; Made request 3: Got the code. Return back to your program.
+response:
+---SUCCESS---
+&gt; playlists Party Time
+party
+Noite Eletronica
+http://open.spotify.com/user/spotifybrazilian/playlist/4k7EZPI3uKMz4aRRrLVfen
+
+Festa Indie
+http://open.spotify.com/user/spotifybrazilian/playlist/4HZh0C9y80GzHDbHZyX770
+
+&gt; exit
+---GOODBYE!---
+?[1;31m
+Start test 9?[0m
+&gt; playlists Party Time
+Please, provide access for application.
+&gt; exit
+---GOODBYE---
+?[1;31m
+Start test 10?[0m
+&gt; auth
+use this link to request the access code:
+http://127.0.0.1:56788/authorize?client_id=e508e7306ef84fcd9a8769cac582b977&amp;redirect_uri=http://localhost:8080&amp;response_type=code
+waiting for code...
+?[0;34mTester&gt; Making requests to 'redirect_uri': http://localhost:8080
+?[0m?[0;34mTester&gt; Made request 1: Authorization code not found. Try again.
+?[0m?[0;34mTester&gt; Made request 2: Authorization code not found. Try again.
+code received
+making http request for access_token...
+?[0m?[0;34mTester&gt; Made request 3: Got the code. Return back to your program.
+response:
+---SUCCESS---
+&gt; playlists Top Lists
+toplists
+{&quot;error&quot;:{&quot;status&quot;:404,&quot;message&quot;:&quot;Test unpredictable error message&quot;}}
+&gt; exit
+---GOODBYE!---
+?[1;31m
+Start test 11?[0m
+&gt; auth
+use this link to request the access code:
+http://127.0.0.1:56788/authorize?client_id=e508e7306ef84fcd9a8769cac582b977&amp;redirect_uri=http://localhost:8080&amp;response_type=code
+waiting for code...
+?[0;34mTester&gt; Making requests to 'redirect_uri': http://localhost:8080
+?[0m?[0;34mTester&gt; Made request 1: Authorization code not found. Try again.
+?[0m?[0;34mTester&gt; Made request 2: Authorization code not found. Try again.
+code received
+making http request for access_token...
+?[0m?[0;34mTester&gt; Made request 3: Got the code. Return back to your program.
+response:
+---SUCCESS---
+&gt; playlists Party Time
+party
+Noite Eletronica
+http://open.spotify.com/user/spotifybrazilian/playlist/4k7EZPI3uKMz4aRRrLVfen
+
+Festa Indie
+http://open.spotify.com/user/spotifybrazilian/playlist/4HZh0C9y80GzHDbHZyX770
+
+&gt; exit
+---GOODBYE!---
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at 27.11.2024, 15:52:26</p>
+</div>
+</div>
+</body>
+</html>
