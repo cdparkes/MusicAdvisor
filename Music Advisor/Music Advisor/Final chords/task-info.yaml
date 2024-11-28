@@ -9,9 +9,6 @@ files:
   - name: src/advisor/Menu.java
     visible: true
     learner_created: false
-  - name: src/advisor/AuthData.java
-    visible: true
-    learner_created: false
   - name: test/MockTokenServer.java
     visible: false
     learner_created: false
@@ -24,6 +21,67 @@ files:
   - name: test/TempWebServerMock.java
     visible: false
     learner_created: false
-feedback_link: https://hyperskill.org/projects/62/stages/339/implement#comment
-status: Unchecked
+  - name: src/advisor/Authentication.java
+    visible: true
+    learner_created: true
+  - name: src/advisor/util/StringUtil.java
+    visible: true
+    learner_created: true
+  - name: src/advisor/util/ErrorUtil.java
+    visible: true
+    learner_created: true
+  - name: src/advisor/util/PaginationUtil.java
+    visible: true
+    learner_created: true
+  - name: src/advisor/models/Category.java
+    visible: true
+    learner_created: true
+  - name: src/advisor/models/Album.java
+    visible: true
+    learner_created: true
+  - name: src/advisor/service/SpotifyService.java
+    visible: true
+    learner_created: true
+  - name: src/advisor/models/Release.java
+    visible: true
+    learner_created: true
+  - name: src/advisor/util/JsonUtil.java
+    visible: true
+    learner_created: true
+  - name: src/advisor/output.json
+    visible: true
+    learner_created: true
+  - name: src/advisor/advisor.zip
+    visible: true
+    is_binary: true
+    learner_created: true
+  - name: src/advisor/models/Playlist.java
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/5481#comment
+status: Failed
+feedback:
+  message: |-
+    Wrong answer in test #2
+
+    An error occurred while retrieving the category list:
+    Access token is incorrect!
+
+    Please find below the output of your program during this failed test.
+    Note that the &#39;&gt;&#39; character indicates the beginning of the input line.
+
+    ---
+
+    Arguments: -access http://127.0.0.1:56788 -resource http://127.0.0.1:56789 -page 1
+
+    &gt; auth
+    Use this link to request the access code:
+    http://127.0.0.1:56788/authorize?client_id=e508e7306ef84fcd9a8769cac582b977&amp;redirect_uri=http://localhost:8080&amp;response_type=code
+    Waiting for authorization code...
+    ---SUCCESS---
+    Access Token: 456456
+    Refresh Token: 567567
+    &gt; categories
+    API Error (401): Invalid access token
+  time: "Thu, 28 Nov 2024 14:57:22 UTC"
 record: -1

@@ -1,5 +1,10 @@
 package advisor.models;
 
+import advisor.service.SpotifyService;
+import advisor.util.PaginationUtil;
+
+import java.util.List;
+
 public class Category {
     private String id;
     private String name;
@@ -7,6 +12,10 @@ public class Category {
     // Constructor
     public Category(String id, String name) {
         this.id = id;
+        this.name = name;
+    }
+
+    public Category(String name) {
         this.name = name;
     }
 
@@ -31,5 +40,20 @@ public class Category {
     @Override
     public String toString() {
         return name + " (" + id + ")";
+    }
+
+    public static void displayCategories() {
+        List<Category> categories = SpotifyService.getCategories();
+
+        if (categories.isEmpty()) {
+            return;
+        }
+
+        // Prepare paginated content
+        List<String> categoryDetails = categories.stream()
+                .map(Category::getName)
+                .toList();
+
+        PaginationUtil.displayPaginated(categoryDetails, 5);
     }
 }

@@ -27,7 +27,7 @@ public class Main {
             }
         }
 
-        // Set the access server for the Menu class
+        // Set the access and resource server for the Menu class
         Menu.setAccessServer(accessServer);
         Menu.setResourceServer(resourceServer);
         // Display the main menu to the user

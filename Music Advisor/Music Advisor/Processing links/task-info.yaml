@@ -9,9 +9,6 @@ files:
   - name: src/advisor/Menu.java
     visible: true
     learner_created: false
-  - name: src/advisor/AuthData.java
-    visible: true
-    learner_created: false
   - name: test/MockTokenServer.java
     visible: false
     learner_created: false
@@ -34,7 +31,7 @@ files:
   - name: src/advisor/Authentication.java
     visible: true
     learner_created: true
-  - name: src/advisor/Service.java
+  - name: src/advisor/service/SpotifyService.java
     visible: true
     learner_created: true
   - name: src/advisor/models/Album.java
@@ -46,9 +43,24 @@ files:
   - name: src/advisor/models/Category.java
     visible: true
     learner_created: true
-feedback_link: https://hyperskill.org/projects/62/stages/338/implement#comment
+  - name: src/advisor/models/Release.java
+    visible: true
+    learner_created: true
+  - name: src/advisor/util/JsonUtil.java
+    visible: true
+    learner_created: true
+  - name: src/advisor/util/ErrorUtil.java
+    visible: true
+    learner_created: true
+  - name: src/advisor/util/StringUtil.java
+    visible: true
+    learner_created: true
+  - name: src/advisor/util/PaginationUtil.java
+    visible: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/5480#comment
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Wed, 27 Nov 2024 14:52:27 UTC"
-record: -1
+  time: "Thu, 28 Nov 2024 11:57:21 UTC"
+record: 4

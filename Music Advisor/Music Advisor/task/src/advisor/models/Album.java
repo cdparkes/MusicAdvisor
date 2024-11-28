@@ -7,12 +7,14 @@ public class Album {
     private List<String> artists;
     private String link;
 
+    // Constructor
     public Album(String name, List<String> artists, String link) {
         this.name = name;
         this.artists = artists;
         this.link = link;
     }
 
+    // Getters and Setters
     public String getName() {
         return name;
     }
@@ -37,6 +39,7 @@ public class Album {
         this.link = link;
     }
 
+    // toString for easy printing
     @Override
     public String toString() {
         return name + "\n[" + String.join(", ", artists) + "]\n" + link + "\n";
